@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maket</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body class="root">
+  <header class="header">
+    <img src="./images/logo.png" alt="логотип иннополиса" class="header__image">
+    <ul class="header__list">
+      <li class="list__text">
+        <a href="./main.html" class="link__text active-link">Главная</a>
+      </li>
+      <li class="list__text">
+        <a href="./students.html" class="link__text">Студенты</a>
+      </li>
+      <li class="list__text">
+        <a href="./course.html" class="link__text">О курсе</a>
+      </li>
+      <li class="list__text">
+        <a href="./contacts.html" class="link__text">Контакты</a>
+      </li>
+    </ul>
+    <button class="header__button" type="button">Войти </button>
+    <div class="overlay">
+      <div class="login__popup">
+        <img src="./images/close.svg" alt="Иконка закрытия" class="popup__close">
+        <h2 class=" login__heading">Войти на сайт</h2>
+        <form class="login__form">
+          <input class="login__input" name="login" type="text" placeholder="Логин" required>
+          <input class="login__input" name="password" type="text" placeholder="Пароль" required>
+          <button class="popup__button" type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="content">
+    <h1 class="content__heading">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
+    <img src="./images/class.jpg" alt="фото класса" class="heading__image">
+    <div class="container">
+      <div class="container__text">
+        <p class="content__text">Для кого этот курс</p>
+        <p class="content__text">Этот курс рассчитан на новичков, которые только начинают знакомство с
+          веб-разработкой.
+          В начале курса вы узнаете о том, как устроен Интернет и веб-сайты.
+          Для обучения необходимо только владеть компьютерной грамотностью (пользоваться браузером, создавать папки и
+          файлы,
+          устанавливать программы).</p>
+        <p class="content__text">Чему вы научитесь</p>
+        <p class="content__text">На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с нуля. Изучите
+          основы языков<span class="font__bold"> HTML, CSS</span> и немного <span class="font__bold">JavaScript.</span>
+          Мы вместе сверстаем сайт нашей группы по этому макету. А затем вы <span class="font__color">сами</span>
+          сверстаете свои личные странички в качестве домашнего задания и мы выложим все это на сервер.</p>
+      </div>
+      <img src="./images/vmeste.png" alt="учимся вместе текст" class="img">
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">2022 ©
+      <a href="#" class="footer__link"> учебный центр </a>
+    </p>
+  </footer>
+  <script defer src="./index.js"></script>
+</body>
+
+</html>
