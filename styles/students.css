@@ -29,7 +29,6 @@ html {
 .header {
   margin: 0 70px;
   width: calc(100% - 140px);
-
   display: flex;
   align-items: center;
   justify-content: center;
