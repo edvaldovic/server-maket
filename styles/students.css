@@ -136,8 +136,8 @@ html {
 }
 
 .container__image {
-  max-width: 200px;
-  max-height: 270px;
+  width: 200px;
+  height: 270px;
 }
 
 .container__image__text {
@@ -177,6 +177,11 @@ html {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+  color: #000000;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /*footer*/

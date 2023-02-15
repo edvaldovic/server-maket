@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400 ;700&display=swap');
+
+.root {
+    background-image: url(../images/fonn.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /*растягивает на весь экран*/
+    background-repeat: no-repeat;
+    /*не повторяет*/
+    margin-bottom: 100px;
+}
+
+.header {
+    color: rgb(118, 29, 29);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 35px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.header__text {
+    color: rgb(118, 29, 29);
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.emages {
+    max-width: 330px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+.header__text1 {
+    color: rgb(118, 29, 29);
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.emages1 {
+    width: 300px;
+    height: 370px;
+    border-radius: 20px;
+}
+
+.emages2 {
+    width: 300px;
+    height: 370px;
+    border-radius: 20px;
+}
+
+.header__text2 {
+    color: rgb(118, 29, 29);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+
+.emages__rab {
+    min-width: 230px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.emages__rab1 {
+    max-width: 380px;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header__text3 {
+    color: rgb(118, 29, 29);
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    margin-left: 30px;
+}
+
+.emages__sobor {
+    width: 85%;
+    border-radius: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
