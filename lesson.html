@@ -2,42 +2,49 @@
 <html lang="ru">
 
 <head>
-   <link rel="stylesheet" href="./normalize.css">
-   <link rel="stylesheet" href="./styles/lesson.css">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Моя страница</title>
+   <link rel="stylesheet" href="./styles/normalize.css">
+   <link rel="stylesheet" href="./styles/lesson.css">
 </head>
 
 <body class="root">
-   <h1 class="header">Здравствуйте учителя !!!</h1>
+   <header class="header">
+      <p class="header__text">Страница о себе и родных</p>
+      <a href="./students.html" class="return">Вернутся</a>
+   </header>
+   <h1 class="heading">Здравствуйте учителя !!!</h1>
    <div class="container">
-      <h2 class="header__text">я Шваб Иван спасибо что приняли меня в универ:</h2>
-      <img src="./images/portrait.jpg" alt="я" class="emages">
+      <p class="content">я Шваб Иван спасибо что приняли меня в универ:</p>
+      <img src="./images/portrait.jpg" alt="я" class="images">
    </div>
-   <h2 class="header__text1"> моя красавица дочка: </h2>
+   <p class="content">моя красавица дочка: </p>
    <div class="container">
-      <img src="./images/Маша.jpg" alt="фото дочи" class="emages1">
-      <img src="./images/Маша1.jpg" alt="фото дочи" class="emages1">
+      <img src="./images/Masha.jpg" alt="фото дочи" class="images__child">
+      <img src="./images/Masha1.jpg" alt="фото дочи" class="images__child">
    </div>
-   <h2 class="header__text1"> моя любимая жена:</h2>
+   <p class="content">моя любимая жена:</p>
    <div class="container">
-      <img src="./images/Яна.jpg" alt="фото жены" class="emages2">
-      <img src="./images/Яна1.jpg" alt="фото жены" class="emages2">
+      <img src="./images/Яна.jpg" alt="фото жены" class="images__wife">
+      <img src="./images/Яна1.jpg" alt="фото жены" class="images__wife">
    </div>
-   <h2 class="header__text2">я 10 лет отработал в шахте,теперь на <q>ивалидности</q><em>надеюсь научиться хоть чему
-         то </em> что бы работу найти !!!</h2>
-   <div class="container1">
-      <img src="./images/я.jpg" alt="моё фото" class="emages__rab">
-      <img src="./images/a.jpg" alt="моё фото" class="emages__rab1">
-      <img src="./images/b.jpg" alt="моё фото" class="emages__rab">
-      <img src="./images/f.jpg" alt="моё фото" class="emages__rab1">
+   <p class="content">я 10 лет отработал в шахте,теперь на <q>ивалидности</q><em>надеюсь научиться хоть чему
+         то </em> что бы работу найти !!!</p>
+   <div class="container__rab">
+      <img src="./images/я.jpg" alt="моё фото" class="images__rab">
+      <img src="./images/a.jpg" alt="моё фото" class="images__rab1">
+      <img src="./images/b.jpg" alt="моё фото" class="images__rab">
+      <img src="./images/f.jpg" alt="моё фото" class="images__rab1">
    </div>
-   <div class="footer">
-      <h2 class="header__text3">Мы живём в Кузбассе г.Новокузнецк Кемеровской области:</h2>
-      <img src="./images/kusna.jpg" alt="собор" class="emages__sobor">
+   <div class="sobor">
+      <p class="content">Мы живём в Кузбассе г.Новокузнецк Кемеровской области:</p>
+      <img src="./images/kusna.jpg" alt="собор" class="images__sobor">
    </div>
+   <footer class="footer">
+      <p class="footer__text">моя почта: shvab2015@yandex.ru</p>
+   </footer>
 </body>
 
 </html>
