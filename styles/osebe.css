@@ -109,6 +109,8 @@
     opacity: .6;
 }
 
+/*content*/
+
 .heading {
     display: flex;
     align-items: center;
@@ -133,7 +135,6 @@
     align-items: center;
     justify-content: center;
     height: 416px;
-    height: 1366px;
     height: 100%;
 }
 
