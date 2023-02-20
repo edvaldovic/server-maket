@@ -141,7 +141,7 @@ html {
 .content__map {
   margin: 0 86px;
   width: calc(100% - 172px);
-  min-height: 380px;
+  height: 380px;
   height: 100%;
 }
 
@@ -234,9 +234,9 @@ html {
   }
 
   .content__map {
-    margin: 0 30px;
-    width: calc(100% - 60px);
-    min-height: 345px;
+    margin: 0 40px;
+    width: calc(100% - 80px);
+    min-height: 326px;
     height: 100%;
   }
 
@@ -319,10 +319,9 @@ html {
   }
 
   .content__map {
-    margin: 0 20px;
-    width: calc(100% - 40px);
-    min-height: 170px;
-    height: 100%;
+    margin: 0 30px;
+    width: calc(100% - 60px);
+    min-height: 182px;
   }
 
   .content__subtitle {
@@ -364,4 +363,14 @@ html {
   .footer__link {
     font-size: 15px;
   }
+}
+
+@media screen and (max-width: 424px) {
+  .content__map {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    min-height: 102px;
+
+  }
+
 }
