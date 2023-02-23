@@ -1,5 +1,6 @@
 const button = document.querySelector('.header__button');
 const overlay = document.querySelector('.overlay');
+const buttonBurger = document.querySelector('.header__button__burger');
 const closeButton = document.querySelector('.popup__close');
 const hamburgerMenu = document.querySelector('.hamburger');
 const hamburgerLineFirst = hamburgerMenu.querySelector('.hamburger__line__first');
@@ -32,5 +33,6 @@ hamburgerMenu.addEventListener('click', () => {
   toggleHamburgerItems();
 });
 button.addEventListener('click', openPopup);
+buttonBurger.addEventListener('click', openPopup);
 closeButton.addEventListener('click', closePopup);
 
