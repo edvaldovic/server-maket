@@ -32,7 +32,13 @@ hamburgerMenu.addEventListener('click', () => {
   toggleHamburgerMenu();
   toggleHamburgerItems();
 });
+
+buttonBurger.addEventListener('click', () => {
+  openPopup();
+  toggleHamburgerItems();
+  toggleHamburgerMenu();
+});
+
 button.addEventListener('click', openPopup);
-buttonBurger.addEventListener('click', openPopup);
 closeButton.addEventListener('click', closePopup);
 

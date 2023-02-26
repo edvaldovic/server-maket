@@ -142,7 +142,6 @@ html {
   margin: 0 86px;
   width: calc(100% - 172px);
   height: 380px;
-  height: 100%;
 }
 
 .content__subtitle {
@@ -321,7 +320,7 @@ html {
   .content__map {
     margin: 0 30px;
     width: calc(100% - 60px);
-    min-height: 182px;
+    min-height: 326px;
   }
 
   .content__subtitle {
