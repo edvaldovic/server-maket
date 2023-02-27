@@ -4,7 +4,12 @@ const buttonRight = document.querySelector('.btn__right');
 const img = document.querySelectorAll('.images__wife ');
 const btnLeft = document.querySelector('.button__left');
 const btnRight = document.querySelector('.button__right');
-
+const buttonBurger = document.querySelector('.header__button__burger');
+const hamburgerMenu = document.querySelector('.hamburger');
+const hamburgerLineFirst = hamburgerMenu.querySelector('.hamburger__line__first');
+const hamburgerLineSecond = hamburgerMenu.querySelector('.hamburger__line__second');
+const hamburgerLineThir = hamburgerMenu.querySelector('.hamburger__line__thir');
+const hamburgerItems = document.querySelector('.hamburger__items');
 
 let position = 0;
 
@@ -62,3 +67,25 @@ function moveImgRight() {
 
 btnLeft.addEventListener('click', moveImgLeft);
 btnRight.addEventListener('click', moveImgRight);
+
+
+
+function toggleHamburgerMenu() {
+  hamburgerLineFirst.classList.toggle('line_first_opened');
+  hamburgerLineSecond.classList.toggle('line_second_opened');
+  hamburgerLineThir.classList.toggle('line_thir_opened');
+}
+
+function toggleHamburgerItems() {
+  hamburgerItems.classList.toggle('hamburger__items__opened');
+}
+
+hamburgerMenu.addEventListener('click', () => {
+  toggleHamburgerMenu();
+  toggleHamburgerItems();
+});
+
+buttonBurger.addEventListener('click', () => {
+  toggleHamburgerItems();
+  toggleHamburgerMenu();
+});

@@ -476,7 +476,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
     gap: 4px;
     margin-top: 6px;
     position: fixed;
@@ -582,12 +582,13 @@ html {
   }
 
   .link__text__burger:hover {
-    background: #FFFFFF;
-    height: 30px;
+    background-color: #FFFFFF;
+    height: 23px;
   }
 
-  .link__text__burger:hover {
-    color: black;
+  .active-link {
+    background: #d2d2d2;
+    height: 23px;
     text-decoration: none;
   }
 
