@@ -143,6 +143,10 @@ html {
   flex: 1 0 auto;
 }
 
+.osebe__link__text {
+  text-decoration: none;
+}
+
 .container__image {
   width: 200px;
   height: 270px;
@@ -314,6 +318,12 @@ html {
     gap: 4px;
     margin-top: 6px;
     position: fixed;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .hamburger:hover {
+    opacity: .6;
   }
 
   .hamburger__line__first {

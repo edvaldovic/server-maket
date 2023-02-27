@@ -480,6 +480,12 @@ html {
     gap: 4px;
     margin-top: 6px;
     position: fixed;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .hamburger:hover {
+    opacity: .6;
   }
 
   .hamburger__line__first {
@@ -488,12 +494,10 @@ html {
     border-radius: 2px;
     background-color: black;
     transition: 0.3s;
-
   }
 
   .line_first_opened {
     transform: rotate(-45deg) translate(-5px, 5px);
-
   }
 
   .hamburger__line__second {

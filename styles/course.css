@@ -69,13 +69,11 @@ html {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-
 }
 
 .link__text:hover {
   background: #FFFFFF;
   height: 80px;
-
 }
 
 .list__text:hover .link__text {
@@ -304,6 +302,12 @@ html {
     gap: 4px;
     margin-top: 6px;
     position: fixed;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .hamburger:hover {
+    opacity: .6;
   }
 
   .hamburger__line__first {

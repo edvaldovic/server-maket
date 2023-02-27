@@ -431,6 +431,12 @@
         gap: 4px;
         margin-top: 6px;
         position: fixed;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .hamburger:hover {
+        opacity: .6;
     }
 
     .hamburger__line__first {
