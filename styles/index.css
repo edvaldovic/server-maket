@@ -614,12 +614,12 @@ html {
     transition: .3s;
   }
 
-  .on__popup {
-    display: flex;
-  }
-
   .header__button__burger:hover {
     opacity: .6;
+  }
+
+  .on__popup {
+    display: flex;
   }
 
   .login__popup {

@@ -455,6 +455,10 @@ html {
     transition: .3s;
   }
 
+  .header__button__burger:hover {
+    opacity: .6;
+  }
+
   .active-link {
     color: #213B7E;
     background: #d2d2d2;

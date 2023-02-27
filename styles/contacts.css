@@ -69,13 +69,11 @@ html {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-
 }
 
 .link__text:hover {
   background: #FFFFFF;
   height: 80px;
-
 }
 
 .list__text:hover .link__text {
@@ -117,6 +115,14 @@ html {
 
 .header__button:hover {
   opacity: .6;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger__items {
+  display: none;
 }
 
 /*content*/
@@ -265,7 +271,7 @@ html {
   }
 
   .footer {
-    margin: 360px 30px 0 30px;
+    margin: 260px 30px 0 30px;
     width: calc(100% - 60px);
     height: 60px;
   }
@@ -274,10 +280,12 @@ html {
 @media screen and (max-width: 767px) {
   .header__image {
     padding: 16px 0 10px 0;
+    display: none;
   }
 
   .header__button {
     margin: 10px auto 10px auto;
+    display: none;
   }
 
   .header {
@@ -285,11 +293,13 @@ html {
     flex-direction: column;
     margin: 0 20px;
     width: calc(100% - 40px);
+    min-height: 60px;
   }
 
   .header__list {
     display: block;
     gap: 10px;
+    display: none;
   }
 
   .link__text:hover {
@@ -306,6 +316,155 @@ html {
     background: #d2d2d2;
     height: 30px;
     text-decoration: none;
+  }
+
+  /*hamburger*/
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    gap: 4px;
+    margin-top: 6px;
+    position: fixed;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .hamburger:hover {
+    opacity: .6;
+  }
+
+  .hamburger__line__first {
+    width: 36px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: black;
+    transition: 0.3s;
+  }
+
+  .line_first_opened {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .hamburger__line__second {
+    width: 36px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: black;
+    transition: 0.3s;
+  }
+
+  .line_second_opened {
+    opacity: 0;
+  }
+
+  .hamburger__line__thir {
+    width: 36px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: black;
+    transition: 0.3s;
+  }
+
+  .line_thir_opened {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .hamburger__items {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #9b9b9b;
+    z-index: 1;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    transform: translateY(-300px);
+    transition: .3s;
+  }
+
+  .hamburger__items__opened {
+    transform: translateY(0);
+  }
+
+  .header__image__burger {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .header__list__burger {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list__text__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link__text__burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .1s;
+    color: black;
+    margin-top: 10px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .link__text__burger:hover {
+    background-color: #FFFFFF;
+    height: 23px;
+  }
+
+  .active-link__burger {
+    background: #d2d2d2;
+    height: 23px;
+    text-decoration: none;
+  }
+
+  .header__button__burger {
+    width: 120px;
+    height: 40px;
+    background: #EA5D21;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    transition: .3s;
+  }
+
+  .header__button__burger:hover {
+    opacity: .6;
   }
 
   .content__title {
@@ -350,7 +509,7 @@ html {
   }
 
   .footer {
-    margin: 370px 20px 0 20px;
+    margin: 260px 20px 0 20px;
     width: calc(100% - 40px);
     height: 50px;
   }

@@ -316,12 +316,10 @@ html {
     border-radius: 2px;
     background-color: black;
     transition: 0.3s;
-
   }
 
   .line_first_opened {
     transform: rotate(-45deg) translate(-5px, 5px);
-
   }
 
   .hamburger__line__second {
@@ -437,6 +435,10 @@ html {
     line-height: 21px;
     color: #FFFFFF;
     transition: .3s;
+  }
+
+  .header__button__burger:hover {
+    opacity: .6;
   }
 
   .container__video {
