@@ -61,13 +61,11 @@ function moveImgRight() {
   img.forEach((image) => {
     image.setAttribute('style', `transform: transLateX(${position}px)`);
   })
-
 }
 
 
 btnLeft.addEventListener('click', moveImgLeft);
 btnRight.addEventListener('click', moveImgRight);
-
 
 
 function toggleHamburgerMenu() {
